@@ -7,12 +7,12 @@ const datbase ={};
 app.use(express.static("public"));
 app.use(express.urlencoded({extended: true}));
 
-app.get('/posts',(req,res)=>{
+app.get("/posts",(req,res)=>{
     res.status(200);
     res.json(database);
 });
 
-app.post('/posts',(req,res)=>{
+app.post("/posts",(req,res)=>{
     database[Object.keys(database).length]=req.body.content;
     res.redirect("/");
 });
