@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang=" ja">
+    <head>
+        <meta charset="utf-8">
+        <title>投稿画面</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-Sg0Ja3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <script src="validation.js" defer></script>
+        <script src="timeline.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="post-form">
+                <div class="pb-2 border-bottom mb-3">
+                    <form id="form" method="post" action="http://localhost: 3000/posts">
+                        <textarea class="form-control" id="content" name="content" rows="3" placeholder="いまどうしてる？ " required></textarea>
+                        <p id="warning" class="text-danger"></p>
+                        <div class="mt-2 me-2 text-end">
+                            <input type="submit" id="submit" class="btn btn-primary rounded-pill" value=">3ïp<">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="timeline">
+                <div class="border border-radius">
+                <p>ダミー投稿1</p>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+ep10QJWyd1fbcAu90CUj5zNLiq" crossorigin="anonymous"></script>
+    </body>
+</html>
